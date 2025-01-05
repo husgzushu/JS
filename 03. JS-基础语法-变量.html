@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-基础语法</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        //定义变量
+        // var a = 0;
+        // a = "A";
+
+        // alert(a);
+
+        // var 定义的是一个全局变量， 还可以重复声明
+        // {
+        //     var a = 0;
+        //     var a = "A";
+        // }
+        // alert(a);
+
+
+        // let 定义的是一个局部变量， 不可以重复声明
+        // {
+        //     let a = 0;
+        //     a = "A";
+
+        //     alert(a);
+        // }
+
+        //const 定义的是一个常量
+        const pi = 3.14;
+        //pi = 3.15;
+
+        alert(pi);
+
+        // 演示var的特性
+        var x = 1;
+        var x = 2; // var可以重复声明
+        console.log('var示例：', x);
+
+        // 演示let的特性
+        {
+            let y = 1;
+            console.log('let块级作用域内：', y);
+        }
+        // console.log(y); // 这里会报错，因为y只在块级作用域内有效
+
+        // 演示const的特性
+        const USER = {
+            name: '张三',
+            age: 18
+        };
+        USER.age = 20; // 可以修改对象的属性
+        // USER = {}; // 这样会报错，不能重新赋值
+        console.log('const对象示例：', USER);
+
+    </script>
+</body>
+
+</html>
